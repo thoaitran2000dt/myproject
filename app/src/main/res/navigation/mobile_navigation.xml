@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_drinkwater">
+
+    <fragment
+        android:id="@+id/nav_drinkwater"
+        android:name="com.example.drinkwater.ui.drinkwater.DrinkWaterFragment"
+        android:label="Drink Water"
+        tools:layout="@layout/fragment_drinkwater" />
+
+    <fragment
+        android:id="@+id/nav_drinklog"
+        android:name="com.example.drinkwater.ui.drinklog.DrinkLogFragment"
+        android:label="Drink Log"
+        tools:layout="@layout/fragment_drinklog" />
+    <fragment
+        android:id="@+id/nav_reminders"
+        android:name="com.example.drinkwater.ui.reminders.RemindersFragment"
+        android:label="Reminders"
+        tools:layout="@layout/reminders_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.drinkwater.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/settings_fragment"/>
+</navigation>
